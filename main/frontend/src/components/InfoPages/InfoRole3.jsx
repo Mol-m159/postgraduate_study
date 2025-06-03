@@ -146,7 +146,7 @@ export default function InfoRole3() {
                                             if (stud.scientificSupervisorID === +selected) {
                                                 const a = findStuff(stud.subjs, 'name', item.name)
                                                 if (!a) return (<><td> - </td></>)
-                                                else return (<><td>{a.assessment}</td></>)
+                                                else return (<><td>{a.assessment == '0' ? 'н' : a.assessment}</td></>)
                                             }
                                         })}
                                     </tr></>))}
